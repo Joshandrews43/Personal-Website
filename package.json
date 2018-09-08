@@ -10,6 +10,9 @@
   "keywords": [],
   "description": "",
   "dependencies": {
-    "animate.css": "^3.7.0"
+    "animate.css": "^3.7.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
   }
 }

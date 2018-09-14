@@ -8,6 +8,12 @@
   flex-direction: row;
   display: flex; }
 
+a, a:active {
+  text-decoration: none; }
+
+a:hover {
+  cursor: pointer; }
+
 body {
   margin-top: 0px; }
 
@@ -80,7 +86,14 @@ body {
       #main-container .project-container .images iframe {
         width: 425px;
         height: 650px; }
-        #main-container .project-container .images iframe #container #intro-container .intro-text {
-          margin-left: 0px; }
+      #main-container .project-container .images #calculator-screenshot {
+        width: 450px;
+        height: 600px; }
+  #main-container .footer {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    margin-bottom: 100px;
+    z-index: 2; }
 
 /*# sourceMappingURL=fullstack.css.map */

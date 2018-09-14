@@ -14,7 +14,7 @@ const typeTitle = (val) => {
     var text = val.text();
     var autoTypeOptions = {
       strings: [text],
-      typeSpeed: 100,
+      typeSpeed: 50,
       showCursor: false
     }
     val.text('');
@@ -31,8 +31,6 @@ $(document).ready(function() {
 
 });
 
-
-
 const typeVisibleTitles = () => {
     $('.typed').each((i, element) => {
         element = $(element);
@@ -42,6 +40,7 @@ const typeVisibleTitles = () => {
         }
     });
 }
+
 const hasNotBeenTyped = (el) => {
     if(el.hasClass('typedComplete')) {
         return false;

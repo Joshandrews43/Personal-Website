@@ -8,17 +8,39 @@
   <meta name="Personal Resume Site" content="Josh Andrews Personal Resume site">
   <meta name="Josh Andrews" content="SitePoint">
 
-  <link rel="stylesheet" type="text/css" href="/static/styles/main.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+  <link rel="stylesheet" type="text/css" href="/static/styles/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
   integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
   crossorigin="anonymous">
-  <script src="/static/js/main.js"></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+  <script src="/static/js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
 
 </head>
 
 <body>
-    <p class="animated bounce">Test</p>
+    <div class="overlay"></div>
+    <!-- Intro typing -->
+    <div id="autoType"></div>
+
+    <!-- Links to specific parts of website -->
+    <div id="intro-screen" class="flex-row" style="display: none;">
+        <a class="left-container" href="/fullstack">
+            <div class="overlay"></div>
+            <div class="intro-line">full stack web developer</div>
+        </a>
+        <a class="right-container">
+            <div class="overlay"></div>
+            <div class="intro-line">founder, Crypto for Charity</div>
+        </a>
+    </div>
 
 </body>
 </html>

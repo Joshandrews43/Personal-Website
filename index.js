@@ -18,6 +18,10 @@ router.get('/', (req, res) => {
 	res.render('index', { title: 'Josh Andrews'})
 });
 
+router.use('/fullstack', (req, res) => {
+	res.render('fullstack', { title: 'fullstack'})
+});
+
 // Use the environment variable or use a given port
 const PORT = process.env.PORT || 8080;
 

@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:600");
+.flex-row {
+  display: flex;
+  flex-direction: row; }
+
+a {
+  text-decoration: none; }
+
+body {
+  margin: 0px;
+  background-image: url("../assets/asteroids.jpg");
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+  body .overlay {
+    width: 100vw;
+    height: 100vh;
+    opacity: .4;
+    background-color: black;
+    position: absolute; }
+
+#autoType {
+  z-index: 3;
+  color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 48px; }
+
+#intro-screen {
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 3; }
+  #intro-screen .left-container, #intro-screen .right-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #intro-screen .left-container .overlay, #intro-screen .right-container .overlay {
+      width: 50vw;
+      z-index: 2; }
+  #intro-screen .right-container .overlay:hover {
+    background-color: #faa73b;
+    opacity: .6;
+    cursor: pointer; }
+  #intro-screen .left-container .overlay:hover {
+    background-color: #81c142;
+    opacity: .6;
+    cursor: pointer; }
+  #intro-screen .intro-line {
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+    z-index: 10; }
+
+/*# sourceMappingURL=index.css.map */

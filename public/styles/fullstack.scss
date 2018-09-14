@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.flex-column {
+    flex-direction: column;
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+    display: flex;
+}
+
+body {
+ margin-top: 0px;
+}
+
+#main-container {
+    display: flex;
+    background-image: url('../assets/bananas.png');
+    margin: 0 7.5% 0 7.5%;
+    -webkit-box-shadow: 2px 2px 4px 1px #000;
+    box-shadow: 2px 2px 4px 1px #000;
+
+
+    .overlay {
+        width: 100vw;
+        height: 100vh;
+        opacity: .4;
+        background-color: white;
+        position: fixed;
+        z-index: 0;
+    }
+
+    #fullstack-title-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 150px;
+        z-index: 2;
+
+        #title-text {
+            text-align: center;
+            font-family: "Dosis";
+            font-size: 58px;
+            height: 75px;
+        }
+
+        #title-subtitle {
+            text-align: center;
+            font-family: 'Open Sans';
+            width: 75%;
+            font-size: 24px;
+        }
+    }
+
+    .project-container {
+        margin-bottom: 150px;
+        z-index: 2;
+
+        .right.text {
+            padding-right: 30px;
+        }
+
+        .left.text {
+            padding-left: 30px;
+        }
+
+        .text {
+            width: 50%;
+            justify-content: center;
+
+            .title-container {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+
+                .title {
+                    font-family: "Dosis";
+                    font-size: 48px;
+                    margin-bottom: 30px;
+                    height: 65px;
+                }
+
+                #kandm-title {
+                    height: 115px;
+                }
+
+                .subtitle {
+                    font-family: 'Open Sans';
+                    font-size: 24px;
+                }
+            }
+
+            .description {
+                font-family: 'Open Sans';
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        .images {
+            width: 50%;
+            justify-content: center;
+            align-items: flex-end;
+
+            #c4c-ipad {
+                width: 500px;
+                height: 275px;
+            }
+
+            #twilio-screenshot {
+                width: 500px;
+                height: 550px;
+            }
+
+            iframe {
+                width: 425px;
+                height: 650px;
+
+                #container #intro-container .intro-text {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Josh Andrews</title>
+  <meta name="Personal Resume Site" content="Josh Andrews Personal Resume site">
+  <meta name="Portfolio Site" content="SitePoint">
+
+  <link rel="stylesheet" type="text/css" href="/static/styles/fullstack.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+
+</head>
+
+<body>
+    <div id="main-container" class="flex-column">
+        <div class="overlay"></div>
+        <div id="fullstack-title-container" class="flex-column">
+            <h1 id="title-text" class="typed">Full Stack Web Developer</h1>
+            <div id="title-subtitle" class="description">After being pushed into programming by my older brother,
+            I discovered a passion for both front-end and back-end programming. Here are a few of my projects.</div>
+        </div>
+        <div id="c4c-container" class="project-container flex-row">
+            <div class="left images flex-row">
+                <img id="c4c-ipad" src="/static/assets/c4c_ipad.png" alt="Donate Crypto IPad">
+            </div>
+            <div class="right text flex-column">
+                <div class="title-container">
+                    <div id="c4c-title" class="title typed">Crypto For Charity</div>
+                    <a class="subtitle" href="https://www.donatecrypto.org">https://www.donatecrypto.org</a>
+                </div>
+                <div class="description">Crypto For Charity (a.k.a Donate Crypto) is a 501(c)(3) non-profit
+                that I founded back in February of 2018. It was designed by Kory Larson Designs, and built using HTML, CSS, JavaScript, Jquery, and
+                Node.JS. If you are interested in learning more, please see the <a href="/c4c">Crypto For Charity page.</a>
+                </div>
+            </div>
+        </div>
+        <div id="fifa-container" class="project-container flex-row">
+            <div class="left text flex-column">
+                <div class="title-container">
+                    <div id="fifa-title" class="title typed">FIFA Messenger</div>
+                    <a class="subtitle">A realtime 2018 World Cup text-messaging program</a>
+                </div>
+                <div class="description">After missing some of my favorite games in the world cup and running out of data
+                on my phone plan, I decided to keep up with the action by creating a program that sends myself text messages
+                every time there was a goal in the World Cup. Hosted on Heroku, this was one of my first projects that integrated a backend environment,
+                and it really got me started with Node.JS. It was during this project that I realized how truly limitless programming can be;
+                Twilio sent the text messages, Firebase stored the data to ensure duplicate messages weren't sent out, and a big shoutout to
+                the creator of the worldcup.sfg.io API. This was one of my more fun hobby projects that ended up sending messages to most of my friends and
+                some family as well.</div>
+            </div>
+            <div class="right images flex-row">
+                <img id="twilio-screenshot" src="/static/assets/twilio_screenshot.png" alt="A screenshot of text messages from the program.">
+            </div>
+        </div>
+        <div id="kandm-container" class="project-container flex-row">
+            <div class="left text flex-column">
+                <div class="title-container">
+                    <div id="kandm-title" class="title typed">Kandm Executive Functioning Quiz</div>
+                    <a class="subtitle" href="https://quiz.bitsofwisdomforall.com/adult">https://quiz.bitsofwisdomforall.com</a>
+                </div>
+                <div class="description">A friend interning at the Kandm Learning Center (a center for students with special needs)
+                hooked me up with my first signed contract work in August 2018. They wanted a replica of their current quiz made with Adobe
+                Experience Design, with a few extra features. I was thrilled to have my first paid programming work, and I got good at a few new
+                API's on the way, including integration with Google Sheets, PDFKit, and Firebase Cloud Storage. Learning how to make PDF's, write to spreadsheets,
+                and uploading files to cloud storage will definitely be useful for later projects. On the right is an iframe with the adult version of the quiz
+                embeded.
+                </div>
+            </div>
+            <div class="right images flex-row">
+                <iframe id="kandm-iframe" title="Kandm Iframe" src="https://quiz.bitsofwisdomforall.com/adult"></iframe>
+                <!-- <img id="kandm-screenshot" src="/static/assets/kandm_screenshot.png" alt="Image of the Kandm Executive Functioning Quiz"> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="/static/js/fullstack.js"></script>
+
+</html>

@@ -9,7 +9,8 @@
   display: flex; }
 
 a, a:active {
-  text-decoration: none; }
+  text-decoration: none;
+  color: blue; }
 
 a:hover {
   cursor: pointer; }
@@ -19,17 +20,7 @@ body {
 
 #main-container {
   display: flex;
-  background-image: url("../assets/bananas.png");
-  margin: 0 7.5% 0 7.5%;
-  -webkit-box-shadow: 2px 2px 4px 1px #000;
-  box-shadow: 2px 2px 4px 1px #000; }
-  #main-container .overlay {
-    width: 100vw;
-    height: 100vh;
-    opacity: .4;
-    background-color: white;
-    position: fixed;
-    z-index: 0; }
+  margin: 0 7.5% 0 7.5%; }
   #main-container #fullstack-title-container {
     display: flex;
     align-items: center;
@@ -85,10 +76,15 @@ body {
         height: 550px; }
       #main-container .project-container .images iframe {
         width: 425px;
-        height: 650px; }
+        height: 650px;
+        border: 5px groove black;
+        border-radius: 5px; }
       #main-container .project-container .images #calculator-screenshot {
         width: 450px;
-        height: 600px; }
+        height: 600px;
+        -moz-transition: transform 1.5s;
+        -webkit-transition: transform 1.5s;
+        transition: transform 1.5s; }
   #main-container .footer {
     text-align: center;
     font-size: 18px;

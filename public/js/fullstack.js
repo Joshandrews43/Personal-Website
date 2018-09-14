@@ -25,6 +25,14 @@ $(document).ready(function() {
 
     $(window).scroll(() => {
         typeVisibleTitles();
+        const calc = $('#calculator-screenshot');
+        if(isScrolledIntoView(calc) && hasNotBeenAnimated(calc)) {
+            calc.attr('src', '/static/assets/calculator.gif');
+            calc.addClass('animationComplete')
+            setTimeout(() => {
+                calc.css({'transform': 'rotate(-180deg)'});
+            }, 8000)
+        }
     });
     // scroll to trigger title loads
     $(window).scroll();
@@ -34,15 +42,15 @@ $(document).ready(function() {
 const typeVisibleTitles = () => {
     $('.typed').each((i, element) => {
         element = $(element);
-        if(isScrolledIntoView(element) && hasNotBeenTyped(element)) {
+        if(isScrolledIntoView(element) && hasNotBeenAnimated(element)) {
             typeTitle(element);
-            element.addClass('typedComplete');
+            element.addClass('animationComplete');
         }
     });
 }
 
-const hasNotBeenTyped = (el) => {
-    if(el.hasClass('typedComplete')) {
+const hasNotBeenAnimated= (el) => {
+    if(el.hasClass('animationComplete')) {
         return false;
     }
     return true;

@@ -13,6 +13,7 @@
 
 a, a:active {
     text-decoration: none;
+    color: blue;
 }
 
 a:hover {
@@ -25,20 +26,7 @@ body {
 
 #main-container {
     display: flex;
-    background-image: url('../assets/bananas.png');
     margin: 0 7.5% 0 7.5%;
-    -webkit-box-shadow: 2px 2px 4px 1px #000;
-    box-shadow: 2px 2px 4px 1px #000;
-
-
-    .overlay {
-        width: 100vw;
-        height: 100vh;
-        opacity: .4;
-        background-color: white;
-        position: fixed;
-        z-index: 0;
-    }
 
     #fullstack-title-container {
         display: flex;
@@ -125,11 +113,16 @@ body {
             iframe {
                 width: 425px;
                 height: 650px;
+                border: 5px groove black;
+                border-radius: 5px;
             }
 
             #calculator-screenshot {
                 width: 450px;
                 height: 600px;
+                -moz-transition: transform 1.5s;
+                -webkit-transition: transform 1.5s;
+                transition: transform 1.5s;
             }
         }
     }

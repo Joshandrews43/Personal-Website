@@ -1,0 +1,119 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Josh Andrews</title>
+  <meta name="Personal Resume Site" content="Josh Andrews Personal Resume site">
+  <meta name="Portfolio Site" content="SitePoint">
+
+  <link rel="stylesheet" type="text/css" href="/static/styles/ios.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+  integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+  crossorigin="anonymous">
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+
+</head>
+
+<body>
+    <div id="main-container" class="flex-column">
+
+        <div id="ios-title-container" class="flex-column">
+            <h1 id="title-text" class="typed">iOS Developer</h1>
+            <div id="title-subtitle" class="description">Some college friends approached me about making a marketplace app for them.
+            That project fell apart before it even started, but they bought me a class on iOS development...</div>
+        </div>
+
+        <div id="tender-container" class="project-container flex-row">
+            <div id="tender-images" class="left images flex-row">
+                <img id="tender-map" class="tender-phone phone" src="/static/assets/tender_map_screen.png" alt="Tender Map Image">
+                <img id="tender-order-screen" class="tender-phone phone" src="/static/assets/tender_order_screen.png" alt="Tender Order Screen">
+                <img id="tender-payment-screen" class="tender-phone phone" src="/static/assets/tender_payment_screen.png" alt="Tender Payment Screen">
+            </div>
+            <div class="right text flex-column">
+                <div id="tender-title-container "class="title-container">
+                    <div id="tender-title" class="title typed">Tender</div>
+                    <div class="subtitle" >A new way to order tenders to your door.</div>
+                </div>
+                <div class="description">My brother and I have been talking about starting a business since we were 13, and Tender
+                    seems to be our first. My first (soon-to-be) published app, Tender brings the chicken tenders to you – if you
+                    live in Berkeley. Implementing MapKit, Braintree, Firebase, and a few other third party API's was a breeze, although
+                    we are currently looking for a designer so we can clean up our UI UX a little more.
+                </div>
+            </div>
+        </div>
+
+        <div id="ar-container" class="project-container flex-row">
+            <div class="left text flex-column">
+                <div class="title-container">
+                    <div id="ar-title" class="title typed">Augmented Reality</div>
+                    <div class="subtitle">Two cool ARKit apps</div>
+                </div>
+                <div class="description">Using Apple's free augmented reality plugin, ARKit, I created a ruler that allows the user
+                    to tap on two points in 3D space and displays the 3D distance between them in meters. It was a relatively simple app to
+                    build, but I use it multiple times a week. Apple released a substantially more feature rich version in iOS 12,
+                    but I like using the version I made – food always tastes better when you cook it. The second app is an AR
+                    dice app that rolls 3D rendered die on any surface.
+                </div>
+            </div>
+            <div class="right images flex-row">
+                <img id="ar-ruler" class="phone" src="/static/assets/ar_ruler_screen.png" alt="AR Ruler Image">
+                <img id="ar-dice" class="phone" src="/static/assets/ar_dice_screen.png" alt="AR Dice Image">
+            </div>
+        </div>
+
+
+        <div id="api-container" class="project-container flex-row">
+            <div class="left images flex-row">
+                <img id="weather-screen" class="phone" src="/static/assets/weather_screen.png" alt="Weather Image">
+                <img id="bitcoin-price-screen" class="phone" src="/static/assets/bitcoin_price_screen.png" alt="Bitcoin Price Image">
+            </div>
+            <div class="right text flex-column">
+                <div class="title-container">
+                    <div id="api-title" class="title typed">Integrating Random API's</div>
+                    <div class="subtitle">I made a few apps just to test third party API's</div>
+                </div>
+                <div class="description">When I got comfortable making simple, static apps and their UI, I began using
+                    Alamofire to make network requests in Swift. On the left is a weather app that uses your current location,
+                    and was my first app learning about asking for user permissions and calling an API. On the right is a
+                    bitcoin price app that shows the price of bitcoin in a few different currencies; I'm pretty into cryptocurrency
+                     and blockchain.
+                </div>
+            </div>
+        </div>
+
+        <div id="beginning-container" class="project-container flex-row">
+            <div class="left text flex-column">
+                <div class="title-container">
+                    <div id="beginning-title" class="title typed">Humble Beginnings</div>
+                    <div class="subtitle">Quick, easy, storyboarded apps to start out.</div>
+                </div>
+                <div class="description">The first apps I made were following the course tutorial that my fraternity
+                    brothers bought me when they asked if I could learn Swift to make them an app. Although that project fell
+                    through, I stuck with the course, and began with these two simple, hardcoded apps. The one on the left is a
+                    Xylaphone that plays different tones per color, and on the right is a general knowledge quiz that introduced
+                    me to cocoapods. I had no idea how much I had yet to learn back then – these seemed like huge feats at the time.
+                </div>
+            </div>
+            <div class="right images flex-row">
+                <img id="xylaphone" class="phone" src="/static/assets/xylaphone_screen.png" alt="Xylaphone Image">
+                <img id="quiz" class="phone" src="/static/assets/quiz_screen.png" alt="Quiz Image">
+            </div>
+        </div>
+
+        <div class="footer">Check out <a href="https://github.com/Joshandrews43/">my GitHub</a> to see the code behind some of these projects.
+        <br /><span style="font-size: 16px">Note that many of these projects are private repos.<span></div>
+
+    </div>
+
+</body>
+
+</html>

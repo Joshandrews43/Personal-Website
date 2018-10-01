@@ -1,10 +1,5 @@
 //animations.js
 
-
-
-
-
-
 $(window).scroll(function(event) {
   $(".module").each(function(i, el) {
     var el = $(el);

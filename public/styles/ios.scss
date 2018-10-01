@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.flex-column {
+    flex-direction: column;
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+    display: flex;
+}
+
+a, a:active {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+body {
+ margin-top: 0px;
+}
+
+#main-container {
+    display: flex;
+    margin: 0 7.5% 0 7.5%;
+
+    #ios-title-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 150px;
+        z-index: 2;
+
+        #title-text {
+            text-align: center;
+            font-family: "Dosis";
+            font-size: 58px;
+            height: 75px;
+        }
+
+        #title-subtitle {
+            text-align: center;
+            font-family: 'Open Sans';
+            width: 75%;
+            font-size: 24px;
+        }
+    }
+
+    .project-container {
+        margin-bottom: 150px;
+        z-index: 2;
+
+        .right.text {
+            padding-left: 30px;
+        }
+
+        .left.text {
+            padding-right: 30px;
+        }
+
+        .text {
+            width: 50%;
+            justify-content: center;
+
+            .title-container {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 30px;
+
+                .title {
+                    font-family: "Dosis";
+                    font-size: 48px;
+                    margin-bottom: 30px;
+                    height: 65px;
+                }
+
+                .subtitle {
+                    font-family: 'Open Sans';
+                    font-size: 24px;
+                }
+            }
+
+            .description {
+                font-family: 'Open Sans';
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        #tender-title-container {
+            width: 35%;
+        }
+
+        #tender-images {
+            width: 65%;
+        }
+
+        .images {
+            width: 50%;
+            justify-content: center;
+            align-items: flex-end;
+
+            .tender-phone {
+                width: 200px !important;
+                height: 400px !important;
+            }
+
+            .phone {
+                width: 300px;
+                height: 600px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .footer {
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Open Sans';
+        margin-bottom: 100px;
+        z-index: 2;
+    }
+}

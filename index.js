@@ -15,11 +15,15 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 router.get('/', (req, res) => {
-	res.render('index', { title: 'Josh Andrews'})
+	res.render('index', { title: 'Josh Andrews'});
 });
 
 router.use('/fullstack', (req, res) => {
-	res.render('fullstack', { title: 'fullstack'})
+	res.render('fullstack', { title: 'fullstack'});
+});
+
+router.use('/ios', (req, res) => {
+	res.render('ios', { title: 'iOS Developer'});
 });
 
 // Use the environment variable or use a given port

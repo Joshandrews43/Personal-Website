@@ -43,7 +43,7 @@ body {
       width: 50vw;
       z-index: 2; }
   #intro-screen .right-container .overlay:hover {
-    background-color: #faa73b;
+    background-color: #4694f5;
     opacity: .6;
     cursor: pointer; }
   #intro-screen .left-container .overlay:hover {

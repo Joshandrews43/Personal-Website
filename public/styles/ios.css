@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:600");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+.flex-column {
+  flex-direction: column;
+  display: flex; }
+
+.flex-row {
+  flex-direction: row;
+  display: flex; }
+
+a, a:active {
+  text-decoration: none;
+  color: blue; }
+
+a:hover {
+  cursor: pointer; }
+
+body {
+  margin-top: 0px; }
+
+#main-container {
+  display: flex;
+  margin: 0 7.5% 0 7.5%; }
+  #main-container #ios-title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 150px;
+    z-index: 2; }
+    #main-container #ios-title-container #title-text {
+      text-align: center;
+      font-family: "Dosis";
+      font-size: 58px;
+      height: 75px; }
+    #main-container #ios-title-container #title-subtitle {
+      text-align: center;
+      font-family: 'Open Sans';
+      width: 75%;
+      font-size: 24px; }
+  #main-container .project-container {
+    margin-bottom: 150px;
+    z-index: 2; }
+    #main-container .project-container .right.text {
+      padding-left: 30px; }
+    #main-container .project-container .left.text {
+      padding-right: 30px; }
+    #main-container .project-container .text {
+      width: 50%;
+      justify-content: center; }
+      #main-container .project-container .text .title-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px; }
+        #main-container .project-container .text .title-container .title {
+          font-family: "Dosis";
+          font-size: 48px;
+          margin-bottom: 30px;
+          height: 65px; }
+        #main-container .project-container .text .title-container .subtitle {
+          font-family: 'Open Sans';
+          font-size: 24px; }
+      #main-container .project-container .text .description {
+        font-family: 'Open Sans';
+        font-size: 18px;
+        line-height: 28px; }
+    #main-container .project-container #tender-title-container {
+      width: 35%; }
+    #main-container .project-container #tender-images {
+      width: 65%; }
+    #main-container .project-container .images {
+      width: 50%;
+      justify-content: center;
+      align-items: flex-end; }
+      #main-container .project-container .images .tender-phone {
+        width: 200px !important;
+        height: 400px !important; }
+      #main-container .project-container .images .phone {
+        width: 300px;
+        height: 600px;
+        margin-left: 10px;
+        margin-right: 10px; }
+  #main-container .footer {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    margin-bottom: 100px;
+    z-index: 2; }
+
+/*# sourceMappingURL=ios.css.map */

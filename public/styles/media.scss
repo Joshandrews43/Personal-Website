@@ -1,0 +1,101 @@
+@media screen and (max-width: 600px) {
+
+    //Intro Screen:
+    #intro-screen {
+        flex-direction: column;
+    }
+
+    //Both routes
+    #main-container {
+        margin: 0 10px 0 10px;
+
+        #fullstack-title-container, #ios-title-container {
+            margin-top: 25px;
+            margin-bottom: 75px;
+
+            #title-subtitle {
+                width: 100%;
+            }
+        }
+        #fullstack-title-container #title-text {
+            height: 150px;
+        }
+
+        .project-container {
+            &.reverse-mobile {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .project-container {
+            flex-direction: column;
+            margin-bottom: 75px;
+
+            .left, .right {
+                width: 100%;
+            }
+
+            .right.text, .left.text {
+                    padding: 0px !important;
+            }
+
+            .text .title-container {
+                width: 100%;
+
+                .title {
+                    height: 100px;
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            #tender-images {
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .images {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 40px;
+
+                //Fullstack images
+                #c4c-ipad {
+                    width: 95%;
+                    height: auto;
+                }
+
+                #twilio-screenshot {
+                    width: 95%;
+                    height: auto;
+                }
+
+                #calculator-screenshot {
+                    width: 95%;
+                    height: auto;
+                }
+
+                iframe {
+                    height: 500px;
+                }
+
+                //iOS images
+                .phone {
+                    width: 175px;
+                    height: 350px;
+                }
+
+                .tender-phone {
+                    width: 120px !important;
+                    height: 240px !important;
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+
+
+    }
+}

@@ -1,0 +1,58 @@
+@media screen and (max-width: 600px) {
+  #intro-screen {
+    flex-direction: column; }
+
+  #main-container {
+    margin: 0 10px 0 10px; }
+    #main-container #fullstack-title-container, #main-container #ios-title-container {
+      margin-top: 25px;
+      margin-bottom: 75px; }
+      #main-container #fullstack-title-container #title-subtitle, #main-container #ios-title-container #title-subtitle {
+        width: 100%; }
+    #main-container #fullstack-title-container #title-text {
+      height: 150px; }
+    #main-container .project-container.reverse-mobile {
+      flex-direction: column-reverse; }
+    #main-container .project-container {
+      flex-direction: column;
+      margin-bottom: 75px; }
+      #main-container .project-container .left, #main-container .project-container .right {
+        width: 100%; }
+      #main-container .project-container .right.text, #main-container .project-container .left.text {
+        padding: 0px !important; }
+      #main-container .project-container .text .title-container {
+        width: 100%; }
+        #main-container .project-container .text .title-container .title {
+          height: 100px;
+          align-items: center;
+          display: flex;
+          justify-content: center; }
+      #main-container .project-container #tender-images {
+        width: 100%;
+        display: flex;
+        justify-content: space-around; }
+      #main-container .project-container .images {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px; }
+        #main-container .project-container .images #c4c-ipad {
+          width: 95%;
+          height: auto; }
+        #main-container .project-container .images #twilio-screenshot {
+          width: 95%;
+          height: auto; }
+        #main-container .project-container .images #calculator-screenshot {
+          width: 95%;
+          height: auto; }
+        #main-container .project-container .images iframe {
+          height: 500px; }
+        #main-container .project-container .images .phone {
+          width: 175px;
+          height: 350px; }
+        #main-container .project-container .images .tender-phone {
+          width: 120px !important;
+          height: 240px !important;
+          margin-left: 0;
+          margin-right: 0; } }
+
+/*# sourceMappingURL=media.css.map */

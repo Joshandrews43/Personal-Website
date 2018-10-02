@@ -1,9 +1,9 @@
 //main.js
 var options = {
-  strings: ["Welcome to my site.", "Got Milk?"],
-  typeSpeed: 10,
-  backSpeed: 10,
-  //backDelay: 1000,
+  strings: ["Welcome to my site.", "Back button coming soon...", "..."],
+  typeSpeed: 50,
+  backSpeed: 40,
+  backDelay: 750,
   onComplete: (self) => {
         $('#autoType').delay(100).fadeOut(100, () => {
             $('body > .overlay').hide();

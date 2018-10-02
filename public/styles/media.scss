@@ -3,6 +3,13 @@
     //Intro Screen:
     #intro-screen {
         flex-direction: column;
+        .left-container, .right-container {
+            width: 100%;
+
+            .overlay {
+                width: 100%;
+            }
+        }
     }
 
     //Both routes
@@ -78,6 +85,7 @@
                 }
 
                 iframe {
+                    width: 90%;
                     height: 500px;
                 }
 
@@ -85,14 +93,16 @@
                 .phone {
                     width: 175px;
                     height: 350px;
+
+                    &.tender-phone {
+                        width: 120px !important;
+                        height: 240px !important;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
                 }
 
-                .tender-phone {
-                    width: 120px !important;
-                    height: 240px !important;
-                    margin-left: 0;
-                    margin-right: 0;
-                }
+
             }
         }
 

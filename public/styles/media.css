@@ -1,6 +1,10 @@
 @media screen and (max-width: 600px) {
   #intro-screen {
     flex-direction: column; }
+    #intro-screen .left-container, #intro-screen .right-container {
+      width: 100%; }
+      #intro-screen .left-container .overlay, #intro-screen .right-container .overlay {
+        width: 100%; }
 
   #main-container {
     margin: 0 10px 0 10px; }
@@ -45,15 +49,15 @@
           width: 95%;
           height: auto; }
         #main-container .project-container .images iframe {
-          width: 95%;
+          width: 90%;
           height: 500px; }
         #main-container .project-container .images .phone {
-          width: 175px;
-          height: 350px; }
-        #main-container .project-container .images .tender-phone {
-          width: 120px !important;
-          height: 240px !important;
-          margin-left: 0;
-          margin-right: 0; } }
+          width: 150px;
+          height: 300px; }
+          #main-container .project-container .images .phone.tender-phone {
+            width: 120px !important;
+            height: 240px !important;
+            margin-left: 0;
+            margin-right: 0; } }
 
 /*# sourceMappingURL=media.css.map */

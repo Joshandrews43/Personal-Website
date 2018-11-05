@@ -25,7 +25,8 @@ body {
   z-index: 3;
   color: white;
   font-family: 'Dosis', sans-serif;
-  font-size: 48px; }
+  font-size: 48px;
+  text-align: center; }
 
 #intro-screen {
   width: 100vw;

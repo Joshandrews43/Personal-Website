@@ -1,15 +1,40 @@
 @media screen and (max-width: 600px) {
 
+body {
+    overflow: hidden;
+    .overlay {
+        width: 100vw;
+        height: 100vh;
+    }
+}
     //Intro Screen:
     #intro-screen {
         flex-direction: column;
         .left-container, .right-container {
-            width: 100%;
+            width: 100vw;
+            height: 50vh;
 
             .overlay {
-                width: 100%;
+                width: 100vw;
+                height: 50vh;
             }
         }
+
+        .left-container .overlay{
+            background-color: rgb(129, 193, 66);
+            opacity: .6;
+            cursor: pointer;
+        }
+
+        .right-container .overlay {
+            background-color: #4694f5;
+            opacity: .6;
+            cursor: pointer;
+        }
+    }
+
+    #back-button {
+        display: none;
     }
 
     //Both routes

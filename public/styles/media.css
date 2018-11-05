@@ -1,10 +1,29 @@
 @media screen and (max-width: 600px) {
+  body {
+    overflow: hidden; }
+    body .overlay {
+      width: 100vw;
+      height: 100vh; }
+
   #intro-screen {
     flex-direction: column; }
     #intro-screen .left-container, #intro-screen .right-container {
-      width: 100%; }
+      width: 100vw;
+      height: 50vh; }
       #intro-screen .left-container .overlay, #intro-screen .right-container .overlay {
-        width: 100%; }
+        width: 100vw;
+        height: 50vh; }
+    #intro-screen .left-container .overlay {
+      background-color: #81c142;
+      opacity: .6;
+      cursor: pointer; }
+    #intro-screen .right-container .overlay {
+      background-color: #4694f5;
+      opacity: .6;
+      cursor: pointer; }
+
+  #back-button {
+    display: none; }
 
   #main-container {
     margin: 0 10px 0 10px; }

@@ -18,6 +18,12 @@ a:hover {
 body {
   margin-top: 0px; }
 
+#back-button img {
+  width: 60px;
+  position: fixed;
+  top: 50px;
+  left: 25px; }
+
 #main-container {
   display: flex;
   margin: 0 7.5% 0 7.5%; }

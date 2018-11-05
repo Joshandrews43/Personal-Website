@@ -1,6 +1,6 @@
 //main.js
 var options = {
-  strings: ["Welcome to my site.", "Back button coming soon...", "..."],
+  strings: ["Welcome to my site.", "..."],
   typeSpeed: 50,
   backSpeed: 40,
   backDelay: 750,
@@ -14,5 +14,11 @@ var options = {
 }
 
 $(document).ready(function() {
-    var typed = new Typed('#autoType', options);
+    console.log(window.location.pathname)
+    if(window.location.pathname === "/home") {
+        $('#intro-screen').fadeIn(100);
+        $('#intro-screen').css('display', 'flex');
+    } else {
+        var typed = new Typed('#autoType', options);
+    }
 });

@@ -15,7 +15,11 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 router.get('/', (req, res) => {
-	res.render('index', { title: 'Josh Andrews'});
+	res.render('index', { title: 'Homepage'});
+});
+
+router.get('/home', (req, res) => {
+	res.render('index', { title: 'Homepage'})
 });
 
 router.use('/fullstack', (req, res) => {
